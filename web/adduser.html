@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+ body{
+            background-color: powderblue;
+            padding-top:20px;
+            
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            line-height: 20px;
+        }
+       h1{
+            background-color: coral;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 0;
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+        } 
+        </style>
+
+
+
+
+<body>
+    <h1><center> Add User</center></h1> </head>
+<form action="adduser.jsp">
+<center> 
+<table border=0 cellspacing=0 cellpadding=10><tbody bgcolor=#d5f4e6>
+        <tr> <td> User Id: </td> <td> <input type="number" name="uid" required="Enter user id"> </td> </tr>
+<tr> <td> First Name: </td> <td> <input type="text" name="fnm"> </td> </tr>
+<tr> <td> Last Name: </td> <td> <input type="text" name="lnm"> </td> </tr>
+<tr> <td> Department :</td> <td> <select name="dept"> <option value="Arts"> Arts </option>
+<option value="Science">Science </option> </select> </td> </tr>
+
+<tr><td>Designation :</td> <td><input type="radio" name="desg" value="Teacher" checked>Teacher<br>
+        <input type="radio" name="desg" value="Student">Student</td></tr>
+        
+
+
+<tr> <td> Year : </td> <td> <select name="yr">
+<option value="nn"> None </option>
+<option value="fy"> First Year </option>
+<option value="sy"> Second Year </option>
+<option value="ty"> Third Year </option>
+</select> </td> </tr>
+
+
+
+<tr> <td> Email Id: </td> <td> <input type="text" name="email" placeholder="Email id" required=""> </td> </tr>
+<tr> <td> Password: </td> <td> <input type="password" name="pass" > </td> </tr>
+<tr> <td> <input type="submit" value="SUBMIT"> </td> <td> <input type="reset" value="CANCLE"></td> </tr>
+    </tbody>
+</table>
+</center>
+</form>
+</body>
+</html>
